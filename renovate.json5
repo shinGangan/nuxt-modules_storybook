@@ -1,13 +1,10 @@
 {
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   extends: [
-    'config:recommended',
-    // Group all minor and patch updates together
-    'group:allNonMajor',
+    // exteds https://github.com/nuxt/renovate-config-nuxt
+　　　　　　　　'github>nuxt/renovate-config-nuxt',
     // Schedule updates to run every weekend
     'schedule:weekends',
-    // Use "chore" type for all commit messages
-    ':semanticCommitTypeAll(chore)',
   ],
   packageRules: [
     {
